@@ -1,0 +1,36 @@
+server:
+  port: 8020
+spring:
+  application:
+    name: admin-managee
+  datasource:
+    url: jdbc:mysql://localhost:3306/library?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: ENC(6OfwXoFXsyy9/l1hfX7eAubHCfy7+OIr)
+    password: ENC(1tyFlv84qMPmIZBRBV9n0A==)
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      max-active: 20
+      initial-size: 1
+      min-idle: 3
+      max-wait: 60000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+  # redis 配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+# 加密所需的salt(盐)
+#jasypt:
+#  encryptor:
+#    password: G0CvDz7oJn6
+#es http方式
+elasticsearch:
+  address: localhost:9200
+#  username: admin
+#  password: admin
+# 开启debug检测
+debug: false
