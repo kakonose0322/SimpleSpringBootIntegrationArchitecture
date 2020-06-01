@@ -13,7 +13,6 @@ import java.util.List;
  * @create 2020-05-08 11:40
  */
 @Repository
-
 public class BookServiceImpl implements BookService {
     @Autowired
     private BookMapper bookMapper;

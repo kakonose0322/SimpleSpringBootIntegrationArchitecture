@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author zwp
  * @create 2020-05-20 14:30
  */
-@Api(tags = "WebSocket-test")
+@Api(tags = "全平台通知接口")
 @RestController("notification")
 public class OrderNotificationWebSocketController {
     @ApiOperation("通知test")
